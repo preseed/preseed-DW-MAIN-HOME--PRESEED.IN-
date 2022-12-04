@@ -1,0 +1,10 @@
+  if (message == 'OK') {
+                        window .location.replace("thankyou.html")
+                    }
+                    else {
+                        console.error(message);
+                        window.location.replace("error.html")
+                    }
+                }
+            );
+        }

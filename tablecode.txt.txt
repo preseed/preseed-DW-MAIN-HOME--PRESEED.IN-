@@ -1,0 +1,29 @@
+ <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="second_body" class="py1 " >
+	    <div class=" row d-flex align-items-center justify-content-center">
+      <table class="table center table-responsive" style="background-color: #ffffff;max-width: 80%;">
+  <thead>
+    <tr>
+      <th scope="col"><b>1. Through our virtuous portfolio software<b>- <a href="https://chattodo.preseed.in" target=_blank> <b style="color:orange" > chattodo.preseed.in</b></a>.</th>
+      <th scope="col">xxxxxx xxxxxxx. xxxxxxxxxx xxxxxxxx xxxxxxxxxx.  xxxxxxxx xxxxxxxxx.  cxxxxxxxxxxxx</th>h>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">2. Through our virtuous portfolio  educational boxes & lab startup- <a href="https://math.preseed.in" target=_blank><b style="color:orange"> math.preseed.in</b></a>.</th>
+      <td>xxxxxx xxxxxxx. xxxxxxxxxx xxxxxxxx xxxxxxxxxx.  xxxxxxxx xxxxxxxxx.  cxxxxxxxxxxxx</td>
+    </tr>
+    <tr>
+      <th scope="row">3. Through our own virtuous space -<a href="https://ecell.preseed.in" target=_blank><b style="color:orange"> ecell.preseed.in</b></a>.</th>
+      <td>xxxxxx xxxxxxx. xxxxxxxxxx xxxxxxxx xxxxxxxxxx.  xxxxxxxx xxxxxxxxx.  cxxxxxxxxxxxx</td
+	  </tr>
+  </tbody>
+</table>
+	    </div>    
