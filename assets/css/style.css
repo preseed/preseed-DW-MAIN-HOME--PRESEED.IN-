@@ -1635,10 +1635,81 @@ details > summary::-webkit-details-marker {
   }
 }
 
+.spirit{
+  color: #ededed;
+}
+
+.bhanupradap{
+  width: 442px;
+  background-color: #fff;
+  padding: 10px;
+  color: #000000;
+  font-size: small;
+  line-height: 1.5;
+  margin-top: 80px;
+  border-radius: 15px;
+}
+
+.bhanupradap p{
+  margin: 10px 5px 5px 5px;
+}
+
+.bhanu{
+   width: 200px;
+   height: 200px;
+   background-image: url("../images/bhanupradap.webp");
+   background-size: 170%;
+   background-position: -80px -0px;
+   border-radius: 50%;
+}
+
+#ch{
+  display: none;
+}
+
+.readmore{
+  display: none;
+}
+
+.read_more p{
+  width: 400px;
+  height: auto;
+  margin: auto;
+  padding: 5px;
+  font-size: smaller;
+}
+
+label{
+  display: inline-block;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  padding: 3px 10px;
+  margin:0 auto 0 auto;
+  width: 100px;
+  height: auto;
+  box-shadow: 2px 2px 2px 2px #505050;
+}
+
+label:hover{
+  color:rgb(160, 160, 160);
+  transition: 1s;
+}
+
+#ch:checked ~ .readmore{
+  display: block;
+}
+
+#ch:checked ~ label{
+  display: none;
+  text-align: justify;
+}
+
+.closelabel{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* News
 *********************************************************************************************/
-
-
-
-
-
