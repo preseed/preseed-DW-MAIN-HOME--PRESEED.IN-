@@ -405,7 +405,7 @@
             <div class="row">
                 <i style="color: white" ;></i>
                 <br><br>
-		    <p class="spirit"><b>Preseed means zero. The zero that is before seed. Preseed.in is Nishchal's blog for something
+		    <p class="spirit" style="text-align: center;"><b>Preseed means zero. The zero that is before seed. Preseed.in is Nishchal's blog for something
                                 more fundamental than the narrative about consciousness.</p><br><br>
                 <p style="color: white;" class="yoga_quote h4 cover-lastpara" align="center"><b>1. Through our virtuous
                         portfolio software startup to make you more productive <b> - <a href="https://chattodo.preseed.in" target=_blank> <b
@@ -622,6 +622,16 @@
             }
 
               </style>
+              <script>
+                window.onload = function() {
+                  let counter = 1;
+                  const numberOfSlides = 4; // change to your number of slides
+                  setInterval(() => {
+                    document.querySelector(`input[title="slide${counter}"]`).checked = true;
+                    counter = counter % numberOfSlides + 1;
+                  }, 8000); // 8000ms = 8s
+                };
+              </script>
                 
             <!---------------------------Logo slider end -------------------------->
 
