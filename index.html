@@ -434,7 +434,7 @@
                   <div class="slider__contents"><a href="https://bit.ly/3NR7sx6" class="gostart"><img src="assets/images/gostartlogo123.svg" alt=""></a> <br>
                     <p class="slider__txt">Through the fee based startup accelerator Nishchal runs with his 3 extraordinary friends from his Mumbai office.</p>
                   </div>
-                  <div class="slider__contents"><a href="https://..#" class="gostart"><img src="assets/images/iidb.png" style="width: 80%; height: auto;" alt=""></a> <br>
+                  <div class="slider__contents"><a href="https://..#" class="iidb"><img src="assets/images/iidb.png" style="width: 80%; height: auto;" alt=""></a> <br>
                     
                     <p class="slider__txt"></p>
                   </div>
@@ -452,6 +452,7 @@
               <style>
             @import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
             @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+            
             
             .startups {
               height: 200px;
@@ -601,6 +602,23 @@
               }
             }
             
+            @media only screen and (max-width:400px) {
+                .startups{
+                    height: 150px;
+                    width: 250px;
+                }
+                .slider__txt{
+                    font-size: 8px;
+                }
+                .slider__contents a img{
+                    width: 60%;
+                    height: auto;
+                }  
+                .slider__contents a .iidb{
+                    width: 50%;
+                }
+            }
+
               </style>
                 
             <!---------------------------Logo slider end -------------------------->
