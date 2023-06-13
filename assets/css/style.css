@@ -1593,10 +1593,22 @@ details > summary::-webkit-details-marker {
   border-radius: 10px;
   box-shadow: 0.5px 0.5px 0.5px 1px rgb(216, 216, 216);
   margin-bottom: 10px;
+  width: 100%;
+
 }
 .yellow-btn {
   background-color: #ffbf1d;
 }
+
+.summary-width-1{
+  width: 60%;
+}
+.summary-width-2{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media only screen and (max-width: 750px) {
   .mob-detail-btn {
     margin-left: 7px;
@@ -1609,6 +1621,16 @@ details > summary::-webkit-details-marker {
     margin-right: 20%;
   }
 }
+
+@media only screen and (max-width: 420px){
+  .summary-width-1{
+    width: 70%;
+  }
+  .summary-width-2{
+    width:100%;
+  }
+}
+
 @media only screen and (max-width: 360px;){
   .faq__content h4{
     font-size: 5px;
