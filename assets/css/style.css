@@ -372,6 +372,18 @@ ul.links {
   }
 }
 
+.download-data{
+  background-color: #Fff;
+  color: /*#ffbe1d*/ #ff005a;
+  border-radius: 10px;
+  border: 0;
+  margin-bottom: 40px;
+}
+
+.download-data:hover{
+  text-decoration: underline;
+}
+
 .font-l {
   font-size: large;
 }
