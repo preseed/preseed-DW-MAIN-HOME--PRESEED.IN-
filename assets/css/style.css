@@ -384,6 +384,117 @@ ul.links {
   text-decoration: underline;
 }
 
+
+/* -------------- top BUTTON */
+
+.button-top {
+  appearance: none;
+  border-radius: 0.25em;
+  color: blCK;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  height: 3em;
+  line-height: 3em;
+  padding: 0 1em;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* -------------- DETAILS MODAL  */
+
+.details-modal {
+  background: #ffffff;
+  border-radius: 0.5em;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  left: 50%;
+  width: 90%;
+  pointer-events: none;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000000000;
+}
+
+.details-modal .details-modal-close {
+  align-items: center;
+  color: #111827;
+  display: flex;
+  height: 4.5em;
+  justify-content: center;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 4.5em;
+}
+
+.details-modal .details-modal-close svg {
+  display: block;
+}
+
+.details-modal .details-modal-title {
+  color: #111827;
+  padding: 1.5em 2em;
+  pointer-events: all;
+  position: relative;
+  width: 90%;
+}
+
+.details-modal .details-modal-title h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.details-modal .details-modal-content {
+  border-top: 1px solid #e0e0e0;
+  padding: 2em;
+  pointer-events: all;
+  overflow: auto;
+}
+
+/* -------------- OVERLAY   */
+
+.details-modal-overlay {
+  transition: opacity 0.2s ease-out;
+  pointer-events: none;
+  background: rgba(15, 23, 42, 0.8);
+  position: fixed;
+  opacity: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.Top[open] .details-modal-overlay {
+  pointer-events: all;
+  opacity: 0.5;
+}
+
+/* -------------- DETAILS------------*/
+
+.Top .summary {
+  list-style: none;
+}
+
+.Top .summary:focus {
+  outline: none;
+}
+
+.Top .summary::-webkit-details-marker {
+  display: none;
+}
+
+/* ---------------------             Top-button end        ------------------------              */
+
 .font-l {
   font-size: large;
 }
@@ -1545,7 +1656,7 @@ summary {
 summary:hover {
   color: #000;
 }
-details[open] summary ~ * {
+.details[open] summary ~ * {
   animation: sweep 1.2s ease-in-out;
 }
 @keyframes sweep {
@@ -1558,26 +1669,26 @@ details[open] summary ~ * {
     margin-top: 0px;
   }
 }
-details > summary::after {
+.details > summary::after {
   position: absolute;
   content: "+";
   top: 18px;
   left: 8px;
 }
-details > .iconbtn::after {
+.details > .iconbtn::after {
   position: absolute;
   content: "+";
   top: 18px;
   left: 8px;
   /*top: 15px;*/
 }
-details[open] > summary::after {
+.details[open] > summary::after {
   position: absolute;
   content: "-";
  top: 18px;
   left: 8px;
 }
-details > summary::-webkit-details-marker {
+.details > summary::-webkit-details-marker {
   display: none;
 }
 
