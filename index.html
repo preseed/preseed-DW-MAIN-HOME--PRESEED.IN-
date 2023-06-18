@@ -431,7 +431,7 @@
                   </div>
                   <div class="slider__contents"><a href="https://..#" class="gostart"><img src="assets/images/iidb.png" style="width: 50%;" alt=""></a> <br>
                     
-                    <p class="slider__txt">Ideate, Collaborate, Innovate: Begin Your Startup Saga.</p>
+                    <p class="slider__txt">Where ideas turn into startups.</p>
                   </div>
                   <div class="slider__contents"><a href="https://quickangels.in" class="gostart"><img src="assets/images/QuickAngels.png" alt=""></a> <br>                 
                     <p class="slider__txt">Instagram for investors.</p>
@@ -620,13 +620,45 @@
               </style>
               <script>
                 window.onload = function() {
-                  let counter = 1;
-                  const numberOfSlides = 4; // change to your number of slides
-                  setInterval(() => {
-                    document.querySelector(`input[title="slide${counter}"]`).checked = true;
-                    counter = counter % numberOfSlides + 1;
-                  }, 8000); // 8000ms = 8s
-                };
+  let counter = 1;
+  const numberOfSlides = 4; // change to your number of slides
+  setInterval(() => {
+    document.querySelector(`input[title="slide${counter}"]`).checked = true;
+    counter = counter % numberOfSlides + 1;
+  }, 4000); // 8000ms = 8s
+
+  // Swipe functionality
+  const slider = document.querySelector('.sliderstartuplogos');
+  let touchStartX = null;
+  let touchEndX = null;
+
+  // Event listeners
+  slider.addEventListener('touchstart', (event) => {
+    touchStartX = event.touches[0].clientX;
+  }, false);
+
+  slider.addEventListener('touchmove', (event) => {
+    touchEndX = event.touches[0].clientX;
+  }, false);
+
+  slider.addEventListener('touchend', () => {
+    handleSwipe();
+  }, false);
+
+  // Function to handle swipe
+  function handleSwipe() {
+    if (touchStartX > touchEndX + 30) { // Swiped left
+      counter = (counter % numberOfSlides) + 1;
+    } else if (touchStartX < touchEndX - 30) { // Swiped right
+      counter--;
+      if (counter < 1) {
+        counter = numberOfSlides;
+      }
+    }
+    document.querySelector(`input[title="slide${counter}"]`).checked = true;
+  }
+};
+
               </script>
                 
             <!---------------------------Logo slider end -------------------------->
@@ -1224,7 +1256,7 @@
                       <p>Read more in:</p>
 
                       <details class="Top">
-                        <summary class="summary" style="border: none; box-shadow: none;background: none; color: black; height: 10px; width: auto;">
+                        <summary class="summary" style="border: none; box-shadow: none;background: none; color: black; height: 10px; width: auto; margin-top: -40px;">
                           <div class="button-top">
                             1. Hindi 
                           </div>
@@ -1237,19 +1269,91 @@
                             </svg>
                           </div>
                           <div class="details-modal-title">
-                            <h1 class="modal-h1">TOP -</h1>
+                            <h1 class="modal-h1">TOP: नए भा रत केे लए घोषणाप</h1>
+                            <audio src="assets/audio/TOP-hindi.mp3" controls loop>
+                                
                           </div>
                           <div class="details-modal-content">
                             <p>
-                              You can click the X in the corner or click the overlay to close this modal.
-                              Something like this could be useful as a nice way to show additional information,
-                              but that's about as far as I would take it. It's just a nice way of styling the details element.
+                                1) प्रस्तावना: <br>
+
+                                हमारे संस्थापक निश्चल केसरवानी के अडिग नेतृत्व द्वारा निर्देशित, हम भारतीय राजनीति के एक ऐसे युग की शुरुआत करने के लिए समर्पित हैं जो नवाचार के साथ परंपरा को जोड़ती है। हमारी राजनीतिक विचारधारा सनातन धर्म के शाश्वत रूप से प्रासंगिक सिद्धांतों, शून्य के अभ्यास से प्राप्त शांति और ज्ञान योग के माध्यम से ज्ञान की ज्ञानवर्धक खोज से उपजी है। ये विचारधाराएं आत्मनिरीक्षण और विकास के माहौल को बढ़ावा देती हैं, जहां व्यक्ति अपनी चेतना की गहराई का पता लगा सकता है, जो एक ऐसे समाज की ओर ले जाता है जो निर्भीक, आध्यात्मिक रूप से समृद्ध और आविष्कारशील हो। हमारा मिशन हमारी संस्कृति में अंतर्निहित कालातीत ज्ञान को समाहित करना है और एक समृद्ध भविष्य के लिए मंच तैयार करने के लिए आधुनिक तकनीकी प्रगति के साथ इसे मूल रूप से बुनना है। हम जिन अभिनव समाधानों का प्रस्ताव करते हैं, वे ज्ञान योग, ज्ञान के योग के दर्शन में गहराई से निहित हैं। हमारे ब्रह्मांड की पेचीदगियों की गहरी समझ और सराहना को प्रोत्साहित करने वाली नीतियों और प्रथाओं को लागू करके, हम एक ऐसे समाज को बढ़ावा देने की उम्मीद करते हैं जो बौद्धिक विकास, महत्वपूर्ण सोच और निरंतर सीखने को महत्व देता है। यह दृष्टिकोण, शून्य के अभ्यास के माध्यम से प्राप्त शांति के साथ मिलकर एक ऐसे समाज का परिणाम देगा जो स्वयं और अपने पर्यावरण के साथ शांति में है। सनातन धर्म के सिद्धांत हमारी नैतिक दिशा का मार्गदर्शन करते हैं, यह सुनिश्चित करते हुए कि हमारी नीतियां हमेशा सत्य, धार्मिकता, शांति, प्रेम और अहिंसा पर आधारित हों। <br><br>
+                                2) हमारी दृष्टि: <br>
+
+                                हम भविष्य के भारत की परिकल्पना करते हैं जो सद्भाव और प्रगति के प्रकाश स्तंभ के रूप में खड़ा हो, दुनिया के लिए एक मिसाल हो। अपनी समृद्ध आध्यात्मिक विरासत में मजबूती से जड़ जमाए यह भारत भविष्य की नवीनताओं को अपनाने से नहीं झिझकेगा बल्कि खुली बांहों से उनका स्वागत करेगा। हमारी दृष्टि एक ऐसा वातावरण बनाने की है जहां परंपरा और प्रौद्योगिकी एक-दूसरे के विपरीत न हों, बल्कि एक-दूसरे को बढ़ाएँ। प्रौद्योगिकी, हमारी दृष्टि में, हमारे कालातीत मूल्यों के प्रसार के लिए एक उपकरण बन जाती है, और हमारी आध्यात्मिक विरासत नैतिक आधार बन जाती है जो प्रौद्योगिकी के उत्तरदायित्वपूर्ण उपयोग को सुनिश्चित करती है। यह भारत लचीला है, क्षणिक प्रतिकूलताओं के प्रति अडिग है। यह समझता है कि चुनौतियाँ बाधाएँ नहीं हैं बल्कि विकास और नवाचार के अवसर हैं। यह दबाव में उखड़ता नहीं है; इसके बजाय, यह फीनिक्स की तरह हमेशा के लिए मजबूत और प्रबुद्ध हो जाता है। यह भारत अपने लोगों के कल्याण और अपने कालातीत मूल्यों के संरक्षण के प्रति अपनी प्रतिबद्धता में अटूट है। यह सुनिश्चित करता है कि जाति, पंथ, धर्म, लिंग या सामाजिक आर्थिक स्थिति की परवाह किए बिना हर नीति, हर कानून और लिया गया हर निर्णय अपने नागरिकों के सर्वोत्तम हित में है। इस दृष्टि को प्राप्त करने के लिए, हमारा लक्ष्य हमारे लोकतांत्रिक शासन को बढ़ाने, हमारे सबसे महत्वपूर्ण सामाजिक मुद्दों को हल करने और आर्थिक विकास को चलाने के लिए प्रौद्योगिकी और नवाचार का लाभ उठाना है। हमारा मानना है कि एक समाज जो हमारी आध्यात्मिक विरासत से प्राप्त मजबूत नैतिक सिद्धांतों के आधार पर प्रौद्योगिकी की शक्ति का उपयोग करता है, वह एक ऐसा समाज होगा जो भविष्य की चुनौतियों के लिए अधिक न्यायसंगत, अधिक कुशल और अधिक लचीला होगा। इसलिए हमारा आह्वान केवल एक राजनीतिक अपील नहीं है, बल्कि एक आध्यात्मिक भी है। हम उन सभी को आमंत्रित करते हैं जो तकनीकी रूप से उन्नत और आध्यात्मिक रूप से समृद्ध भारत के हमारे दृष्टिकोण को साझा करते हैं, वे एक नए भारत के निर्माण की इस साहसिक यात्रा में शामिल हों। साथ मिलकर, हम अपने भाग्य को फिर से लिख सकते हैं और अपने प्यारे देश के लिए एक नया मार्ग तैयार कर सकते हैं।
+                                <br><br>
+                                3) हमारा मिशन: <br><br>
+                                
+                                A) सनातन धर्म की भावना को पुनर्जीवित करना: <br>
+                                
+                                हमारे मिशन के केंद्र में सनातन धर्म का कायाकल्प है, एक ऐसा लोकाचार जिसने सदियों से भारत की आध्यात्मिक और सांस्कृतिक पहचान को एक साथ रखा है। सनातन धर्म का ज्ञान समय, युग या भूगोल से बंधा नहीं है; यह धर्मी जीवन जीने के लिए एक सार्वभौमिक मार्गदर्शक है। हम इस कालातीत ज्ञान को अपने देश के सामाजिक, राजनीतिक और सांस्कृतिक टेपेस्ट्री में डालना चाहते हैं। इस जलसेक का उद्देश्य एक ऐसे राजनीतिक वातावरण को बढ़ावा देना है जो धार्मिकता, सम्मान, आपसी समझ और विविधता में एकता के सिद्धांतों को बनाए रखता है।
+                                
+                                हम इन सिद्धांतों को अपनी नीति-निर्माण प्रक्रिया का मूल बनाने, अपने निर्णयों और कार्यों को चलाने के लिए समर्पित हैं। हम सभी व्यक्तियों के साथ निष्पक्षता से व्यवहार करने में विश्वास करते हैं, हम जिस समाज में सह-अस्तित्व में हैं, उसके सद्भाव को बनाए रखते हुए उन्हें अपनी मान्यताओं को व्यक्त करने की स्वतंत्रता प्रदान करते हैं।
+                                <br><br>
+                                B) शून्य के माध्यम से सशक्तिकरण: <br>
+                                
+                                शून्य की गहराई इस विश्वास में निहित है कि 'शून्यता' के दायरे में ही अनंत संभावनाएं उभरती हैं। इस आत्मविश्लेषी मौन की खोज, जो अक्सर गहरे ध्यान में पाई जाती है, समकालीन जीवन की अशांति के बीच भी मानसिक संतुलन और आंतरिक शांति की ओर ले जा सकती है। एक राजनीतिक दल के रूप में, हम जीवन के एक तरीके के रूप में आत्मनिरीक्षण, ध्यान और आध्यात्मिक शिक्षा को प्रोत्साहित करने की इस संस्कृति को विकसित करने के लिए प्रतिबद्ध हैं। हमारा लक्ष्य उन नीतियों को पेश करना है जो हमारे नागरिकों के बीच मानसिक कल्याण और मनोवैज्ञानिक लचीलेपन को बढ़ावा दें।हमारी तेज़ गति वाली दुनिया में, शून्य में पाई जाने वाली शांति जीवन की गुणवत्ता बढ़ाने, तनाव कम करने और मानसिक रूप से मजबूत और भावनात्मक रूप से लचीला समाज बनाने के लिए आवश्यक संतुलन प्रदान करेगी।
+                                <br><br>
+                                C) ज्ञान योग के माध्यम से ज्ञान: <br>
+                                
+                                
+                                ज्ञान की खोज, या ज्ञान योग, हमारे मिशन के लिए मूलभूत है। हम स्वीकार करते हैं कि ज्ञान सामाजिक उन्नति और व्यक्तिगत विकास की आधारशिला है। हम एक ऐसे समाज का निर्माण करने का प्रयास करते हैं जहां शिक्षा एक विशेषाधिकार नहीं है बल्कि सभी के लिए सुलभ अधिकार है। हम एक ऐसे भारत की कल्पना करते हैं जहां सीखने की सराहना की जाती है, अनुसंधान और विकास को सख्ती से आगे बढ़ाया जाता है, और पूछताछ की भावना को कभी दबाया नहीं जाता बल्कि प्रोत्साहित किया जाता है। इस खोज में, हम ऐसी नीतियां बनाने की योजना बना रहे हैं जो हमारी शिक्षा प्रणाली को मजबूत करें, वैज्ञानिक स्वभाव को प्रोत्साहित करें, और एक ऐसे वातावरण को बढ़ावा दें जो बौद्धिक विकास और खुले प्रवचन को प्रोत्साहित करे। हमारा मानना है कि एक प्रबुद्ध समाज एक ऐसे भारत के निर्माण की कुंजी है जो भविष्य की ज्ञान अर्थव्यवस्था में नेतृत्व करने के लिए तैयार है।
+                                <br><br>
+                                D) बेरोजगारी को संबोधित करना: <br>
+                                
+                                बेरोजगारी का मुद्दा एक गंभीर चिंता का विषय है जिसके लिए नवोन्मेषी और सतत प्रयासों की आवश्यकता है। रोजगार सृजन और आर्थिक विकास के लिए एक प्रमुख चालक के रूप में उद्यमिता की शक्ति को पहचानते हुए, हमारा उद्देश्य एक गतिशील उद्यमशीलता पारिस्थितिकी तंत्र को बढ़ावा देना है। वित्तीय प्रोत्साहन, नियमों को आसान बनाने और नवाचार की संस्कृति को बढ़ावा देकर हम स्टार्टअप्स और तकनीकी कंपनियों के लिए अनुकूल वातावरण प्रदान करने के लिए काम करेंगे। इन स्टार्टअप्स को प्रोत्साहित करके हम रोजगार के नए अवसर सृजित कर सकते हैं और आर्थिक विकास को प्रोत्साहित कर सकते हैं। इसके अलावा, हम अपने कर्मचारियों को उद्योग की मांगों को पूरा करने वाले प्रासंगिक कौशल से लैस करने के महत्व को समझते हैं। इसलिए, हम व्यावसायिक प्रशिक्षण कार्यक्रम स्थापित करने का प्रस्ताव करते हैं जो विभिन्न उद्योगों की जरूरतों से सीधे जुड़े हुए हैं। इन कार्यक्रमों का उद्देश्य व्यक्तियों, विशेष रूप से युवाओं को कौशल और ज्ञान प्रदान करके उनकी रोजगार क्षमता को बढ़ाना है, जिसकी नौकरी बाजार में मांग है। इसके अतिरिक्त, हमारा उद्देश्य नौकरी चाहने वालों और नियोक्ताओं के बीच की खाई को पाटने के लिए प्रौद्योगिकी की शक्ति का लाभ उठाना है। ऑनलाइन प्लेटफ़ॉर्म बनाकर, हम एक ऐसा स्थान प्रदान कर सकते हैं जहाँ नौकरी चाहने वाले संभावित नियोक्ताओं को आसानी से खोज सकें और इसके विपरीत, नौकरी खोज प्रक्रिया को और अधिक कुशल और सुलभ बना सकें।
+                                <br><br>
+                                E) शिक्षा को पुनर्जीवित करना: <br>
+                                
+                                शिक्षा एक मौलिक अधिकार है, और हम मानते हैं कि गुणवत्तापूर्ण शिक्षा तक सभी की पहुंच होनी चाहिए। हालाँकि, वर्तमान शिक्षा प्रणाली की अपनी सीमाएँ हैं। विशेष रूप से ग्रामीण क्षेत्रों में गुणवत्तापूर्ण शिक्षा तक पहुंच एक चुनौती बनी हुई है। हमारी शिक्षा प्रणाली के फोकस को रटंत सीखने से महत्वपूर्ण सोच कौशल के विकास पर स्थानांतरित करने की भी आवश्यकता है। इन चुनौतियों का समाधान करने के लिए, हमारा लक्ष्य तकनीकी समाधानों का लाभ उठाना है। ऑनलाइन लर्निंग प्लेटफॉर्म को बढ़ावा देकर, हम देश भर में गुणवत्तापूर्ण शिक्षा तक पहुंच का लोकतंत्रीकरण कर सकते हैं, जिससे शहरी और ग्रामीण शिक्षा के बीच की खाई को पाटा जा सकता है। ये मंच विविध और इंटरैक्टिव शिक्षण संसाधन प्रदान कर सकते हैं, जिससे छात्र अपनी गति और अपनी शैली में सीखने में सक्षम हो सकते हैं। इसके अतिरिक्त, हम एक योग्यता-आधारित पाठ्यक्रम को बढ़ावा देने का प्रस्ताव करते हैं। इसका अर्थ है ध्यान को रटने से हटाकर ज्ञान की समझ और अनुप्रयोग पर केंद्रित करना।
+                                
+                                हम यह सुनिश्चित करने के लिए परीक्षा प्रणाली को ओवरहाल करने की दिशा में भी काम करेंगे कि यह छात्रों को उनकी जानकारी याद रखने की क्षमता के बजाय अवधारणाओं की समझ, महत्वपूर्ण सोच कौशल और ज्ञान को लागू करने की क्षमता का आकलन करे।
+                                <br><br>
+                                F) हेल्थकेयर को पुनर्परिभाषित करना: <br>
+                                
+                                हाल के वैश्विक स्वास्थ्य संकट ने हमारे स्वास्थ्य सेवा प्रणाली में कमजोरियों को उजागर किया है, और अधिक लचीला और सुलभ स्वास्थ्य देखभाल बुनियादी ढांचे की आवश्यकता को रेखांकित किया है। हम स्वास्थ्य सेवा की पहुंच बढ़ाने के साधन के रूप में टेलीमेडिसिन में निवेश करने का प्रस्ताव करते हैं। टेलीमेडिसिन लंबी दूरी की यात्रा किए बिना दूरस्थ क्षेत्रों में व्यक्तियों को चिकित्सा परामर्श और उपचार प्राप्त करने में सक्षम बना सकता है। यह भौतिक स्वास्थ्य सुविधाओं पर बोझ को कम करने में भी मदद कर सकता है। इसके अलावा, हमारा मानना है कि हमें हेल्थकेयर में एआई और डेटा एनालिटिक्स का लाभ उठाने की जरूरत है। ये प्रौद्योगिकियां पूर्वानुमानित स्वास्थ्य सेवा को सक्षम कर सकती हैं, जिससे हम स्वास्थ्य प्रवृत्तियों का पूर्वानुमान लगा सकते हैं और सक्रिय उपाय कर सकते हैं। एआई का उपयोग नियमित कार्यों को स्वचालित करने के लिए भी किया जा सकता है, जिससे चिकित्सा पेशेवरों को अधिक जटिल कार्यों पर ध्यान केंद्रित करने के लिए मुक्त किया जा सकता है। हम स्वास्थ्य सेवा क्षेत्र में सार्वजनिक-निजी भागीदारी को बढ़ावा देने की भी वकालत करते हैं। संसाधनों और विशेषज्ञता को पूल करके, हम स्वास्थ्य देखभाल के बुनियादी ढांचे में सुधार कर सकते हैं, स्वास्थ्य सेवा कवरेज बढ़ा सकते हैं और स्वास्थ्य सेवाओं की गुणवत्ता बढ़ा सकते हैं।
+                                <br><br>
+                                G) वायु प्रदूषण से निपटना: <br>
+                                
+                                वायु प्रदूषण एक गंभीर चिंता का विषय है जो सार्वजनिक स्वास्थ्य और पर्यावरण के लिए खतरा है। हम तकनीकी हस्तक्षेपों और नीतिगत उपायों के माध्यम से इस मुद्दे का समाधान करने के लिए प्रतिबद्ध हैं। हम रीयल-टाइम वायु गुणवत्ता निगरानी और भविष्यवाणी विश्लेषण के लिए आईओटी प्रौद्योगिकी का लाभ उठाने का प्रस्ताव करते हैं। वायु गुणवत्ता पर रीयल-टाइम डेटा तक पहुंच बनाकर, हम वायु प्रदूषण को दूर करने के लिए समय पर उपाय कर सकते हैं। भविष्यवाणिय विश्लेषण हमें विभिन्न कारकों के आधार पर वायु गुणवत्ता का पूर्वानुमान लगाने में भी मदद कर सकता है, जिससे हमें पूर्वव्यापी कार्रवाई करने में मदद मिलती है। इसके अलावा, हमारा उद्देश्य उन नीतियों को लागू करना है जो स्वच्छ ऊर्जा के उपयोग को बढ़ावा देती हैं और जीवाश्म ईंधन पर हमारी निर्भरता को कम करती हैं। इसमें सौर और पवन ऊर्जा जैसे नवीकरणीय ऊर्जा स्रोतों को बढ़ावा देना, ऊर्जा-कुशल प्रथाओं को प्रोत्साहित करना और वायु प्रदूषण में प्रमुख योगदान देने वाले उद्योगों पर सख्त नियम लागू करना शामिल है।
+                                <br><br>
+                                H) डिजिटल डिवाइड को पाटना: <br>
+                                
+                                आज के डिजिटल युग में इंटरनेट की पहुंच एक मूलभूत आवश्यकता है। हालांकि, भारत में एक महत्वपूर्ण डिजिटल विभाजन है, ग्रामीण और वंचित क्षेत्रों में सस्ती इंटरनेट सेवाओं तक पहुंच की कमी है। यह न केवल इन समुदायों की सूचना तक पहुंच को सीमित करता है बल्कि उन्हें शिक्षा, रोजगार और उद्यमिता में विभिन्न अवसरों से भी बाहर करता है जो डिजिटल दुनिया प्रदान करता है। हम ऐसी पहल करने का संकल्प लेते हैं जो इस डिजिटल विभाजन को पाटेगी। इसमें उन क्षेत्रों में सार्वजनिक वाई-फाई ज़ोन स्थापित करना शामिल है जहाँ इंटरनेट का उपयोग सीमित है। इन क्षेत्रों में मुफ्त या सस्ती इंटरनेट पहुंच प्रदान करके हम इन समुदायों को सशक्त बना सकते हैं और अधिक समान डिजिटल अवसर पैदा कर सकते हैं। इसके अलावा, हमारा लक्ष्य डिजिटल साक्षरता कार्यक्रमों को लागू करना है। इंटरनेट तक पहुंच होना ही काफी नहीं है; डिजिटल दुनिया को प्रभावी ढंग से और सुरक्षित रूप से नेविगेट करने के लिए व्यक्तियों के पास कौशल होना चाहिए। ये कार्यक्रम व्यक्तियों को विभिन्न डिजिटल उपकरणों का उपयोग करने, ऑनलाइन जानकारी को समझने और उसका मूल्यांकन करने और ऑनलाइन सुरक्षा सुनिश्चित करने के बारे में शिक्षित करेंगे।
+                                <br><br>
+                                I) भ्रष्टाचार का मुकाबला: <br>
+                                
+                                भ्रष्टाचार एक व्यापक मुद्दा है जो आर्थिक विकास और सामाजिक विकास को कमजोर करता है। हमारा मानना है कि भ्रष्टाचार के खिलाफ लड़ाई में प्रौद्योगिकी एक शक्तिशाली उपकरण हो सकती है। विशेष रूप से, हम सार्वजनिक व्यय में पारदर्शिता बढ़ाने के लिए ब्लॉकचेन प्रौद्योगिकी का लाभ उठाने का प्रस्ताव करते हैं। ब्लॉकचैन की विकेन्द्रीकृत और अपरिवर्तनीय प्रकृति इसे लेनदेन रिकॉर्ड करने के लिए एक आदर्श समाधान बनाती है, क्योंकि यह अनधिकृत परिवर्तनों को रोक सकती है और लेनदेन की पता लगाने की क्षमता सुनिश्चित कर सकती है। इससे सार्वजनिक खर्च में पारदर्शिता और जवाबदेही में काफी सुधार हो सकता है, भ्रष्टाचार और धन की हेराफेरी पर रोक लग सकती है। इसके अलावा, हम सरकारी लेनदेन के लिए स्मार्ट अनुबंधों को नियोजित करने का प्रस्ताव करते हैं। स्मार्ट अनुबंध स्व-निष्पादित अनुबंध हैं, समझौते की शर्तों को सीधे कोड में लिखा जा रहा है।
+                                
+                                बिचौलियों की आवश्यकता और भ्रष्टाचार के अवसरों को कम करते हुए, पूर्व निर्धारित शर्तों को पूरा करने के बाद वे स्वचालित रूप से लेन-देन निष्पादित करते हैं।
+                                <br><br>
+                                J) उन्नत किसान कल्याण: <br>
+                                
+                                कृषि भारतीय अर्थव्यवस्था की रीढ़ है, जनसंख्या का एक बड़ा वर्ग अपनी आजीविका के लिए इस पर निर्भर है। हम किसानों के सामने आने वाले संकट को स्वीकार करते हैं और उनकी चिंताओं को दूर करने के लिए प्रतिबद्ध हैं। हम कृषि उत्पादकता और किसानों की आय बढ़ाने के लिए प्रौद्योगिकी आधारित समाधान प्रस्तावित करते हैं। इसमें बेहतर फसल उपज पूर्वानुमान के लिए एआई का उपयोग करना शामिल है। एआई फसल की पैदावार की सटीक भविष्यवाणी प्रदान करने के लिए मौसम के पैटर्न, मिट्टी की गुणवत्ता और फसल रोगों जैसे विभिन्न कारकों का विश्लेषण कर सकता है। इससे किसानों को अपनी फसलों की बेहतर योजना बनाने, फसल की विफलता को कम करने और अपनी आय बढ़ाने में मदद मिल सकती है। हम पारदर्शी और कुशल आपूर्ति श्रृंखला बनाने के लिए ब्लॉकचेन तकनीक का उपयोग करने का भी प्रस्ताव रखते हैं। ब्लॉकचेन माल की आवाजाही के बारे में वास्तविक समय की जानकारी प्रदान कर सकता है, सूचना के साथ छेड़छाड़ को रोक सकता है और किसानों के लिए उचित मूल्य सुनिश्चित कर सकता है। इसके अलावा, हमारा उद्देश्य डिजिटल प्लेटफॉर्म बनाना है जो किसानों और उपभोक्ताओं के बीच सीधे संपर्क की सुविधा प्रदान करता है। बिचौलियों को खत्म करके, ये प्लेटफॉर्म यह सुनिश्चित कर सकते हैं कि किसानों को उनकी उपज का उचित मूल्य मिले और उपभोक्ताओं को ताजा और सस्ती उपज मिले।
+                                <br><br>
+                                K) लैंगिक समानता को बढ़ावा देना: <br>
+                                
+                                लैंगिक समानता एक मौलिक अधिकार है और एक निष्पक्ष और समृद्ध समाज के लिए आवश्यक है। हम सभी लिंगों के लिए समान अवसर सुनिश्चित करने की प्रतिज्ञा करते हैं। इसमें राजनीति और व्यवसाय से लेकर विज्ञान और कला तक सभी क्षेत्रों में समान प्रतिनिधित्व को बढ़ावा देना शामिल है। हम लिंग आधारित भेदभाव और हिंसा के खिलाफ कानूनों को लागू करेंगे और यह सुनिश्चित करेंगे कि इन कानूनों को प्रभावी ढंग से लागू किया जाए। हम जागरूकता कार्यक्रम शुरू करने की भी योजना बना रहे हैं जो पितृसत्तात्मक मानदंडों को चुनौती देते हैं और लैंगिक समानता को बढ़ावा देते हैं। ये कार्यक्रम स्कूलों और कार्यस्थलों से लेकर मीडिया और राजनीति तक विभिन्न सामाजिक स्तरों को लक्षित करेंगे, और लैंगिक असमानता को बनाए रखने वाले पूर्वाग्रहों, रूढ़ियों और हानिकारक प्रथाओं को दूर करने का लक्ष्य रखेंगे।
+                                <br><br>
+                                L) बुनियादी ढांचे को मजबूत बनाना: <br>
+                                
+                                इन्फ्रास्ट्रक्चर आर्थिक विकास और सामाजिक विकास की आधारशिला है। हम भारत के बुनियादी ढांचे में सुधार की आवश्यकता को स्वीकार करते हैं, विशेष रूप से ग्रामीण और कम सेवा वाले क्षेत्रों में। हमारी अवसंरचना विकास योजनाओं में विभिन्न क्षेत्र शामिल हैं। परिवहन में, हमारा उद्देश्य सिस्टम को आधुनिक बनाना और कनेक्टिविटी में सुधार करना है, जिससे लोगों और सामानों की कुशल और टिकाऊ आवाजाही को सुगम बनाया जा सके। स्वच्छता और अपशिष्ट प्रबंधन में, हम सार्वजनिक स्वास्थ्य और पर्यावरण संरक्षण को बढ़ाने वाले अभिनव और टिकाऊ समाधानों को लागू करने का प्रस्ताव करते हैं। उपयोगिताओं के संदर्भ में, हम सभी घरों में स्वच्छ पानी और बिजली की विश्वसनीय पहुंच सुनिश्चित करने के लिए प्रतिबद्ध हैं। इसमें जल संरक्षण प्रथाओं को बढ़ावा देना, जल बुनियादी ढांचे में सुधार करना और नवीकरणीय ऊर्जा क्षेत्र का विस्तार करना शामिल है।
+                                <br><br>
+                                M) कानून और व्यवस्था प्रणाली में सुधार: <br>
+                                
+                                  टॉप में, हम एक न्यायसंगत और शांतिपूर्ण समाज सुनिश्चित करने में कानूनी प्रणाली द्वारा निभाई जाने वाली अभिन्न भूमिका को पहचानते हैं। एक प्रभावी और कुशल कानूनी प्रणाली वह आधारशिला है जिस पर हमारे अधिकार और स्वतंत्रता टिकी हुई है। इसलिए, हम भारत में कानून के शासन को मजबूत करने के लिए व्यापक सुधारों को लागू करने के लिए प्रतिबद्ध हैं। आरंभ करने के लिए, हम समझते हैं कि वर्तमान प्रणाली अत्यधिक बोझिल है। आज तक, भारत में विभिन्न अदालतों में लाखों मामले लंबित हैं। इस तरह की देरी नागरिकों को उनके समय पर न्याय के अधिकार से वंचित करती है। इससे निपटने के लिए हम सभी स्तरों पर अदालतों और न्यायाधीशों की संख्या बढ़ाने का प्रस्ताव करते हैं। हम अधिक जिला अदालतों के निर्माण और मौजूदा लोगों के बुनियादी ढांचे को बढ़ाने पर ध्यान केंद्रित करेंगे। हम महिलाओं, बच्चों और समाज के अन्य कमजोर वर्गों से संबंधित मामलों के लिए फास्ट-ट्रैक अदालतें भी सुनिश्चित करेंगे। इसके अलावा, हम अपनी कानूनी प्रणाली को और अधिक कुशल बनाने के लिए प्रौद्योगिकी में निवेश करेंगे। हम अदालत के रिकॉर्ड और कार्यवाही को डिजिटाइज़ करने की योजना बना रहे हैं, जिससे न्यायाधीशों, वकीलों और वादियों के लिए उन तक पहुँच आसान हो जाएगी। इससे न केवल न्यायिक प्रक्रिया में तेजी आएगी बल्कि पारदर्शिता भी आएगी। हम अपने पुलिस बल को समुदाय के अनुकूल बनाने का भी लक्ष्य रखते हैं।
+                                
+                                पुलिस न केवल कानून लागू करने वाली है बल्कि सेवा प्रदाता भी है जो लोगों से सीधे बातचीत करती है। हम मानवाधिकारों, लैंगिक संवेदनशीलता और सामुदायिक संबंधों पर सबक शामिल करने के लिए पुलिस प्रशिक्षण में सुधार का प्रस्ताव करते हैं। इससे विश्वास बनाने और पुलिस और समुदाय के बीच संबंध सुधारने में मदद मिलेगी। सुधार का एक अन्य महत्वपूर्ण क्षेत्र हमारी जेल व्यवस्था होगी। जेलों का उद्देश्य सिर्फ सजा देना ही नहीं बल्कि पुनर्वास भी होना चाहिए। हमारा लक्ष्य यह सुनिश्चित करना है कि जेल एक सुरक्षित और मानवीय वातावरण प्रदान करें। कैदियों को कौशल से लैस करने के लिए जेलों में व्यावसायिक प्रशिक्षण कार्यक्रम लागू किए जाएंगे जो उन्हें उनकी सजा के बाद समाज में फिर से जोड़ने में मदद कर सकते हैं। अंत में, हम समझते हैं कि कानूनों को समाज में परिवर्तनों के साथ तालमेल बिठाने की आवश्यकता है। इसलिए, हम अपने कानूनी ढांचे की नियमित समीक्षा करने की प्रतिज्ञा करते हैं। यह सुनिश्चित करेगा कि हमारे कानून हमारे समाज की वर्तमान वास्तविकताओं और भविष्य की अपेक्षाओं को प्रतिबिंबित करें। हम सरकार की विभिन्न शाखाओं के बीच शक्तियों का स्पष्ट पृथक्करण बनाए रखने के महत्व को भी समझते हैं। हम अपने सभी कार्यों में इस सिद्धांत का पालन करेंगे। इन कदमों के माध्यम से, हमारा उद्देश्य यह सुनिश्चित करना है कि भारत के प्रत्येक नागरिक की न्याय तक पहुंच हो जो समय पर, कुशल, पारदर्शी और दयालु हो।
+                                <br><br>
+                                4) हमारी अपील: <br>
+                                
+                                हम मानते हैं कि हमने जो रास्ता चुना है वह महत्वाकांक्षी है और यात्रा कठिन होगी। हम इसे अकेले नहीं चल सकते। हमें आपकी आवश्यकता है - भारत के लोग, जो हमारे प्रयास में हमारे साथ जुड़ने के लिए एक दुस्साहसी, आध्यात्मिक और आविष्कारशील राष्ट्र के हमारे दृष्टिकोण को साझा करते हैं। हम हर उस नागरिक को अपना निमंत्रण देते हैं जो बदलाव के लिए तरसता है, हर वह व्यक्ति जो एक बेहतर कल चाहता है, और हर दिमाग जिसके पास एक विचार है जो जीवन को बदल सकता है। आपका समय, आपके विचार, आपके कौशल और आपके संसाधन - ये सभी हमारे लिए अमूल्य हैं। बदले में, हम आपको एक मंच प्रदान करते हैं जहां आपकी आवाज सुनी जाएगी, आपके विचारों का सम्मान किया जाएगा और आपके प्रयासों की सराहना की जाएगी। हम आपको एक ऐसे परिवर्तन का हिस्सा बनने का अवसर प्रदान करते हैं जो न केवल आपके भविष्य को बल्कि आने वाली पीढ़ियों के भविष्य को भी नया आकार देगा। हम आपकी स्वयंसेवी भावना के लिए पूछते हैं। स्वयं सेवा देने का एक कार्य है - अपना समय, अपनी ऊर्जा और अपने कौशल। हम मानते हैं कि जब हम में से प्रत्येक देता है, तो हम सभी को लाभ होता है। एक स्वयंसेवक के रूप में, आपके पास हमारी टीमों के साथ मिलकर काम करने, अपने विचारों और प्रयासों में योगदान करने और उस बदलाव को प्रत्यक्ष रूप से देखने का अवसर होगा जिसका आप हिस्सा होंगे। हम आपका दान भी मांगते हैं । ये फंड न सिर्फ हमारे मिशन को सपोर्ट करेंगे, बल्कि ये हमारे विजन में आपके भरोसे को भी दर्शाएंगे। हम इन निधियों का जिम्मेदारी से, पारदर्शी रूप से और भारत के लोगों की सेवा करने के एकमात्र उद्देश्य के लिए उपयोग करने के लिए प्रतिबद्ध हैं। हम यह सुनिश्चित करने के लिए मजबूत तंत्र लागू करेंगे कि प्रत्येक रुपये का हिसाब रखा जाए और उसका प्रभावी ढंग से उपयोग किया जाए। हमारे संस्थापक, निश्चल केसरवानी को उद्धृत करने के लिए, "यह केवल एक मिशन नहीं है। यह एक आंदोलन है - एक नए भारत की ओर एक आंदोलन। इस आंदोलन को अपना बनाएं। अपने सपनों को साझा करें, अपना समर्थन दें, और आइए मिलकर एक ऐसा भारत बनाएं जो दुस्साहसी हो , आध्यात्मिक और आविष्कारशील। "हमारी यात्रा अभी शुरू हुई है, और हमारे आगे एक लंबी सड़क है। लेकिन हम मानते हैं कि आपके समर्थन से ऐसी कोई चुनौती नहीं है जिसे हम पार नहीं कर सकते। आइए हम सब मिलकर एक ऐसे भविष्य के लिए प्रयास करें जहां हर भारतीय सम्मान, समृद्धि और शांति के साथ रह सके। <br><br>
                             </p>
                           </div>
                         </div>
                       </details>
                       <details class="Top"> 
-                        <summary class="summary" style="border: none; box-shadow: none;background: none; color: black; height: 10px; width: auto;">
+                        <summary class="summary" style="border: none; box-shadow: none;background: none; color: black; height: 10px; width: auto; margin-bottom: 25px;">
                           <div class="button-top">
                          2. English
                           </div>
@@ -1262,7 +1366,11 @@
                             </svg>
                           </div>
                           <div class="details-modal-title">
+                            
                             <h1 class="modal-h1">TOP: Manifesto for a New India</h1>
+                            <audio controls loop>
+                                <source src="assets/audio/TOP-english.mp3" type="">
+                            </audio>
                           </div>
                           <div class="details-modal-content">
                             <p>
@@ -1287,7 +1395,71 @@
                              of Sanatan Dharma guide our moral compass, ensuring that our 
                              policies are always grounded in truth, righteousness, peace, love, and 
                              non-violence. <br><br>
-                             <b>Our Vision:</b> <br> We envisage an India of the future that stands as a beacon of harmony and progress, an exemplar for the world. This India, rooted firmly in its rich spiritual heritage, will not shy away from embracing the novelties of the future but will welcome them with open arms. Our vision seeks to create an environment where tradition and technology are not at odds with each other, but rather, they enhance each other. Technology, in our vision, becomes a tool for the propagation of our timeless values, and our spiritual heritage becomes the ethical grounding that ensures the responsible use of technology. This India is resilient, unyielding to transient adversities. It understands that challenges are not obstacles but opportunities for growth and innovation. It does not crumble under pressure; instead, it rises like the phoenix, evermore strong and enlightened. This India is unwavering in its commitment to the welfare of its people and the preservation of its timeless values. It ensures that every policy, every law, and every decision taken is in the best interest of its citizens, regardless of their caste, creed, religion, gender, or socioeconomic status. To achieve this vision, we aim to leverage technology and innovation as tools for enhancing our democratic governance, solving our most pressing social issues, and driving economic growth. We believe that a society that harnesses the power of technology, underpinned by strong ethical principles derived from our spiritual heritage, will be a society that is more equitable, more efficient, and more resilient to future challenges. Our call to action, therefore, is not just a political appeal, but a spiritual one as well. We invite all those who share our vision of a technologically advanced and spiritually enriched India to join us on this audacious journey towards creating a New India. Together, we can rewrite our destiny and chart a new course for our beloved nation. Our Mission: Reviving the Spirit of Sanatan Dharma: In the heart of our mission is the rejuvenation of Sanatan Dharma, an ethos that has held the spiritual and cultural identity of India together for millennia. The wisdom of Sanatan Dharma is not bound by time, age, or geography; it is a universal guide to righteous living. We seek to infuse this timeless wisdom into our nation's
+                             <b>Our Vision:</b> <br> We envisage an India of the future that stands as 
+                             a beacon of harmony and progress, an exemplar for the world. This India, 
+                             rooted firmly in its rich spiritual heritage, will not shy away from embracing 
+                             the novelties of the future but will welcome them with open arms. Our vision 
+                             seeks to create an environment where tradition and technology are not at odds 
+                             with each other, but rather, they enhance each other. Technology, in our vision, 
+                             becomes a tool for the propagation of our timeless values, and our spiritual heritage 
+                             becomes the ethical grounding that ensures the responsible use of technology. 
+                             This India is resilient, unyielding to transient adversities. It understands that 
+                             challenges are not obstacles but opportunities for growth and innovation. It does 
+                             not crumble under pressure; instead, it rises like the phoenix, evermore strong and 
+                             enlightened. This India is unwavering in its commitment to the welfare of its people 
+                             and the preservation of its timeless values. It ensures that every policy, every law, 
+                             and every decision taken is in the best interest of its citizens, regardless of their 
+                             caste, creed, religion, gender, or socioeconomic status. To achieve this vision, we aim 
+                             to leverage technology and innovation as tools for enhancing our democratic governance, 
+                             solving our most pressing social issues, and driving economic growth. We believe that a 
+                             society that harnesses the power of technology, underpinned by strong ethical principles 
+                             derived from our spiritual heritage, will be a society that is more equitable, more 
+                             efficient, and more resilient to future challenges. Our call to action, therefore, 
+                             is not just a political appeal, but a spiritual one as well. We invite all those who 
+                             share our vision of a technologically advanced and spiritually enriched India to join 
+                             us on this audacious journey towards creating a New India. Together, we can rewrite our 
+                             destiny and chart a new course for our beloved nation. Our Mission: Reviving the Spirit 
+                             of Sanatan Dharma: In the heart of our mission is the rejuvenation of Sanatan Dharma, 
+                             an ethos that has held the spiritual and cultural identity of India together for 
+                             millennia. The wisdom of Sanatan Dharma is not bound by time, age, or geography; 
+                             it is a universal guide to righteous living. We seek to infuse this timeless wisdom 
+                             into our nation's social, political, and cultural tapestry. This infusion aims at 
+                             fostering a political environment that upholds principles of righteousness, respect, 
+                             mutual understanding, and the celebration of unity in diversity. We are dedicated to 
+                             making these principles the core of our policy-making process, driving our decisions 
+                             and actions. We believe in treating all individuals with fairness, granting them the 
+                             freedom to express their beliefs while upholding the harmony of the society we coexist 
+                             in. <br> <br>
+                             <b>Empowerment through Shoonya:</b> <br>The profundity of Shoonya lies in the belief 
+                             that it's within the realm of 'nothingness' that infinite possibilities emerge. The 
+                             quest for this introspective silence, often found in deep meditation, can lead to 
+                             mental equilibrium and inner peace, even amidst the turbulence of contemporary life. 
+                             As a political party, we commit to cultivating this culture of introspection, 
+                             encouraging meditation and spiritual learning as a way of life. We aim to introduce 
+                             policies that promote mental well-being and psychological resilience among our citizens. 
+                             In our fast-paced world, the peace found in Shoonya will provide the balance necessary to 
+                             enhance the quality of life, reduce stress, and cultivate a society that is mentally robust 
+                             and emotionally resilient. <br><br>
+                             <b>Enlightenment through Gyana Yog:</b> <br> The pursuit of knowledge, or Gyan Yog, is 
+                             foundational to our mission. We acknowledge that knowledge is the cornerstone of societal 
+                             advancement and personal growth. We strive to build a society where education isn't a privilege 
+                             but a right accessible to all. We envision an India where learning is cherished, research and 
+                             development are vigorously pursued, and the spirit of inquiry is never stifled but encouraged. 
+                             In this pursuit, we plan to create policies that strengthen our education system, encourage 
+                             scientific temperament, and foster an environment that stimulates intellectual growth and open 
+                             discourse. An enlightened society, we believe, is the key to creating an India that is ready to 
+                             lead in the knowledge economy of the future. <br><br>
+                             <b>Addressing Unemployment:</b> <br> The issue of unemployment is a pressing concern that requires innovative and sustained efforts. Recognizing the power of entrepreneurship as a key driver for job creation and economic growth, we aim to foster a dynamic entrepreneurial ecosystem. We will work to provide a conducive environment for startups and tech companies, by offering fiscal incentives, easing regulations, and promoting a culture of innovation. By encouraging these startups, we can create new job opportunities and stimulate economic growth. Furthermore, we understand the importance of equipping our workforce with relevant skills that meet industry demands. Therefore, we propose to establish vocational training programs that are directly linked to the needs of various industries. These programs would aim to enhance the employability of individuals, particularly the youth, by providing them with the skills and knowledge that are in demand in the job market. Additionally, we aim to leverage the power of technology to bridge the gap between job seekers and employers. By creating online platforms, we can provide a space where job seekers can easily find potential employers and vice versa, thereby making the job search process more efficient and accessible. <br><br>
+                             <b>Revitalizing Education:</b> <br> Education is a fundamental right, and we believe that everyone should have access to quality education. However, the current education system has its limitations. Access to quality education remains a challenge, particularly in rural areas. There is also a need to shift the focus of our education system from rote learning to the development of critical thinking skills. To address these challenges, we aim to leverage edtech solutions. By promoting online learning platforms, we can democratize access to quality education across the country, thereby bridging the gap between urban and rural education. These platforms can provide diverse and interactive learning resources, enabling students to learn at their own pace and in their own style. Additionally, we propose to foster a competency based curriculum. This means shifting the focus from memorization to the understanding and application of knowledge. We will also work towards overhauling the examination system to ensure that it assesses students on their understanding of concepts, critical thinking skills, and ability to apply knowledge, rather than their ability to memorize information. <br><br>
+                             <b>Redefining Healthcare:</b> <br> The recent global health crisis has exposed the vulnerabilities in our healthcare system, underlining the need for a more resilient and accessible healthcare infrastructure. We propose to invest in telemedicine as a means to enhance healthcare accessibility. Telemedicine can enable individuals in remote areas to access medical consultation and treatment without having to travel long distances. It can also help in reducing the burden on physical healthcare facilities. Moreover, we believe that we need to leverage AI and data analytics in healthcare. These technologies can enable predictive healthcare, allowing us to forecast health trends and take proactive measures. AI can also be used to automate routine tasks, thereby freeing up medical professionals to focus on more complex tasks. We also advocate for fostering public-private partnerships in the healthcare sector. By pooling resources and expertise, we can improve healthcare infrastructure, increase healthcare coverage, and enhance the quality of healthcare services. <br> <br>
+                             <b>Tackling Air Pollution:</b> <br>Air pollution is a grave concern that threatens public health and the environment. We are committed to addressing this issue through technological interventions and policy measures. We propose to leverage IoT technology for real-time air quality monitoring and predictive analysis. By having access to real-time data on air quality, we can take timely measures to address air pollution. Predictive analysis can also help us forecast air quality based on various factors, enabling us to take preemptive action. Furthermore, we aim to enforce policies that promote the use of clean energy and reduce our dependence on fossil fuels. This includes promoting renewable energy sources like solar and wind energy, incentivizing energy-efficient practices, and imposing stricter regulations on industries that are major contributors to air pollution. <br><br>
+                             <b>Bridging the Digital Divide:</b> <br> In today's digital age, access to the internet is a basic necessity. However, there is a significant digital divide in India, with rural and underprivileged areas lacking access to affordable internet services. This not only limits these communities' access to information but also excludes them from various opportunities in education, employment, and entrepreneurship that the digital world offers. We pledge to undertake initiatives that will bridge this digital divide. This includes establishing public Wi-Fi zones in areas where internet access is limited. By providing free or affordable internet access in these areas, we can empower these communities and create more equitable digital opportunities. Moreover, we aim to implement digital literacy programs. Having access to the internet is not enough; individuals need to have the skills to navigate the digital world effectively and safely. These programs will educate individuals about using various digital tools, understanding and evaluating online information, and ensuring online safety and security. <br><br>
+                             <b>Combating Corruption:</b> <br>Corruption is a pervasive issue that undermines economic growth and social development. We believe that technology can be a powerful tool in the fight against corruption. Specifically, we propose to leverage blockchain technology to enhance transparency in public spending. Blockchain's decentralized and immutable nature makes it an ideal solution for recording transactions, as it can prevent unauthorized alterations and ensure the traceability of transactions. This can greatly improve transparency and accountability in public spending, deterring corruption and isappropriation of funds. Furthermore, we propose to employ smart contracts for government transactions. Smart contracts are self-executing contracts with the terms of the agreement being directly written into code. They automatically execute transactions once the pre-set conditions are met, reducing the need for intermediaries and the opportunities for corruption. <br><br>
+                             <b>Elevating Farmers' Welfare:</b> <br> Agriculture is the backbone of the Indian economy, with a large section of the population depending on it for their livelihood. We acknowledge the distress faced by farmers and are committed to addressing their concerns. We propose technology-driven solutions to enhance agricultural productivity and farmers' income. This includes using AI for better crop yield prediction. AI can analyze various factors such as weather patterns, soil quality, and crop diseases, to provide accurate predictions of crop yields. This can help farmers plan their crops better, reduce crop failure, and enhance their income. We also propose to use blockchain technology to create transparent and efficient supply chains. Blockchain can provide real-time information about the movement of goods, prevent tampering of information, and ensure fair pricing for farmers. Furthermore, we aim to create digital platforms that facilitate direct connections between farmers and consumers. By eliminating middlemen, these platforms can ensure that farmers receive a fair price for their produce and consumers get fresh and affordable produce. <br><br>
+                             <b>Promoting Gender Equality:</b> <br>Gender equality is a fundamental right and is essential for a fair and prosperous society. We pledge to ensure equal opportunities for all genders. This includes promoting equal representation in all fields, from politics and business to science and arts. We will enforce laws against gender-based discrimination and violence, and ensure that these laws are effectively implemented. We also plan to initiate awareness programs that challenge patriarchal norms and promote gender equality. These programs will target various societal levels, from schools and workplaces to media and politics, and will aim to address biases, stereotypes, and harmful practices that perpetuate gender inequality. <br><br>
+                             <b>Strengthening Infrastructure:</b> <br>Infrastructure is the cornerstone of economic growth and social development. We acknowledge the need to improve India's infrastructure, particularly in rural and underserved areas. Our infrastructure development plans encompass various sectors. In transport, we aim to modernise systems and improve connectivity, facilitating efficient and sustainable movement of people and goods. In sanitation and waste management, we propose to implement innovative and sustainable solutions that enhance public health and environmental protection. In terms of utilities, we are committed to ensuring reliable access to clean water and electricity for all households. This includes promoting water conservation practices, improving water infrastructure, and expanding the renewable energy sector. <br><br>
+                             <b><u>Reforming the Law and Order System</u></b> <br><br> At TOP, we recognize the integral role the legal system plays in ensuring a just and peaceful society. An effective and efficient legal system is the bedrock upon which our rights and freedoms rest. We are, therefore, committed to implementing comprehensive reforms to strengthen the rule of law in India. To begin with, we understand the current system is overburdened. As of today, there are millions of cases pending across various courts in India. Such delays deny citizens their right to timely justice. To tackle this, we propose increasing the number of courts and judges at all levels. We will focus on building more district courts and enhancing the infrastructure of existing ones. We will also ensure fast-track courts for cases related to women, children, and other vulnerable sections of the society. Further, we will invest in technology to make our legal system more efficient. We plan to digitalise court records and proceedings, making it easier for judges, lawyers, and litigants to access them. This would not only speed up the judicial process but also bring more transparency. We also aim to make our police force more community-friendly. The police are not just law enforcers but also service providers who interact directly with the people. We propose reforms in police training to incorporate lessons on human rights, gender sensitivity, and community relations. This will help in building trust and improving the relationship between the police and the community. Another critical area of reform would be our prison system. The aim of prisons should not only be to punish but also to rehabilitate. We aim to ensure that prisons provide a safe and humane environment. Vocational training programs will be implemented in prisons to equip inmates with skills that can help them reintegrate into society after their sentence. Lastly, we understand that laws need to keep pace with changes in society. As such, we pledge to undertake regular reviews of our legal framework. This would ensure our laws reflect the current realities and future anticipations of our society. We also understand the importance of maintaining a clear separation of powers among different branches of the government. We will uphold this principle in all our actions. Through these steps, we aim to ensure that every citizen of India has access to justice that is timely, efficient, transparent, and compassionate. <br><br>
+                             <b>Our Appeal:</b> <br> We recognize that the path we have chosen is ambitious, and the journey will be arduous. We cannot walk it alone. We need you - the people of India, who share our vision of an audacious, spiritual, and inventive nation, to join us in our endeavor. We extend our invitation to every citizen who yearns for change, every individual who seeks a better tomorrow, and every mind that holds an idea that can transform lives. Your time, your ideas, your skills, and your resources - they are all invaluable to us. In return, we offer you a platform where your voice will be heard, your ideas will be respected, and your efforts will be appreciated. We offer you an opportunity to be a part of a transformation that will reshape not just your future, but the future of generations to come. We ask for your volunteering spirit. Volunteering is an act of giving - your time, your energy, and your skills. We believe that when each of us gives, all of us gain. As a volunteer, you will have the opportunity to work closely with our teams, contribute your ideas and efforts, and witness first-hand the change that you will be a part of. We also seek your donations. These funds will not just support our mission, but they will also represent your belief in our vision. We commit to using these funds responsibly, ransparently, and for the sole purpose of serving the people of India. We will implement robust echanisms to ensure that every rupee is accounted for and used effectively. To quote our founder, Nishchal Kesarwani, "This is not just a mission. It's a movement - a movement towards a new India. Make this movement your own. Share your dreams, lend your support, and let's together create an India that is audacious, spiritual, and inventive." Our journey is just beginning, and we have a long road ahead of us. But we believe that with your support, there is no challenge that we cannot overcome. Together, let's strive for a future where every Indian can live with dignity, prosperity, and peace. <br><br>
                             </p>
                           </div>
                         </div>
