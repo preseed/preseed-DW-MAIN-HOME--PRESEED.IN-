@@ -183,10 +183,11 @@
             border-radius: 15px;
         }
 
-        .gostart:hover{
+        .gostart1 img:hover, .gostart:hover{
             background-color: #3d91f4;
             transition: 1s;
         }
+
     </style>
 </head>
 
@@ -405,7 +406,7 @@
                 <p style="color: white;" class="yoga_quote h4 cover-lastpara" align="center"><b>1. Through our virtuous
                         portfolio software startup to make you more productive <b> - <a href="https://chattodo.preseed.in" target=_blank> <b
                                     style="color:#ffbf1d"> chattodo.preseed.in</b></a>.</b></b></p>
-                            <p style="color: #fff;" class="yoga_quote h4 cover-lastpara" align="center"><b>2. Through our other virtuous portfolio startups, yet again for entrepreneurs : 
+                            <p style="color: #fff;" class="yoga_quote h4 cover-lastpara" align="center"><b>2. Through our other softwares, yet again for entrepreneurs : 
                            </b></p>
                         
                         <br>
@@ -422,27 +423,25 @@
                 
                 <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/> &nbsp;&nbsp;&nbsp;
                 <input type="radio" name="slider" title="slide2" class="slider__nav"/>&nbsp;&nbsp;&nbsp;
-                <input type="radio" name="slider" title="slide3" class="slider__nav"/>&nbsp;&nbsp;&nbsp;
-                <input type="radio" name="slider" title="slide4" class="slider__nav"/>&nbsp;&nbsp;&nbsp; 
                 
                 <div class="slider__inner">
-                  <div class="slider__contents"><a href="https://bit.ly/3NR7sx6" class="gostart"><img src="assets/images/gostartlogo123.svg" alt=""></a> <br>
-                    <p class="slider__txt">Through the fee based startup accelerator Nishchal runs with his 3 extraordinary friends from his Mumbai office.</p>
-                  </div>
-                  <div class="slider__contents"><a href="https://..#" class="gostart"><img src="assets/images/iidb.png" style="width: 50%;" alt=""></a> <br>
+                  
+                  <div class="slider__contents"><a href="https://..#" class="gostart"><img src="assets/images/iidb.png" style="width: 30%;" alt=""></a> <br>
                     
                     <p class="slider__txt">Where ideas turn into startups.</p>
                   </div>
                   <div class="slider__contents"><a href="https://quickangels.in" class="gostart"><img src="assets/images/QuickAngels.png" alt=""></a> <br>                 
                     <p class="slider__txt">Instagram for investors.</p>
                   </div>
-                  <div class="slider__contents"><a href="https://mentorhub.in" class="gostart"><img src="assets/images/mentorhub.svg" alt=""></a> <br>                 
-                    <p class="slider__txt">Your Gateway to Expert Startup Mentorship.</p>
-                  </div>
                 </div>
               </div>
                 </div>
-            </div>
+            </div> <br><br>
+            <div class="slider__contents">
+                <p class="" style="color: white;font-size: calc(12px + (17 - 12) * (100vw - 320px) / (1920 - 320));">Through the fee based startup accelerator Nishchal runs with his 3 extraordinary friends from his Mumbai office:</p><br>
+                <a href="https://bit.ly/3NR7sx6" class="gostart"><img src="assets/images/gostartlogo123.svg" alt="" style="width: 100%;" ></a> <br>
+                
+              </div>
             
               <style>
             @import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
@@ -506,17 +505,12 @@
                       animation: check 0.4s linear forwards;
             }
             .slider__nav:checked:nth-of-type(1) ~ .slider__inner {
-              left: 0%;
+              left: -50%;
             }
             .slider__nav:checked:nth-of-type(2) ~ .slider__inner {
-              left: -100%;
+              left: -250%;
             }
-            .slider__nav:checked:nth-of-type(3) ~ .slider__inner {
-              left: -200%;
-            }
-            .slider__nav:checked:nth-of-type(4) ~ .slider__inner {
-              left: -300%;
-            }
+            
             .slider__inner {
               position: absolute;
               top: 0;
@@ -561,7 +555,7 @@
             }
             
             .slider__contents a img{
-                width: 100%;
+                width: 40%;
                 height: auto;
             }
         
@@ -575,8 +569,10 @@
               color: #ffffff;
               margin-bottom: 3rem;
               max-width: 300px;
-              font-size: calc(9px + (12 - 9) * (100vw - 320px) / (1920 - 320));;
+              font-size: calc(12px + (15 - 12) * (100vw - 320px) / (1920 - 320));
             }
+
+            
             
             @-webkit-keyframes check {
               50% {
@@ -621,7 +617,7 @@
               <script>
                 window.onload = function() {
   let counter = 1;
-  const numberOfSlides = 4; // change to your number of slides
+  const numberOfSlides = 2; // change to your number of slides
   setInterval(() => {
     document.querySelector(`input[title="slide${counter}"]`).checked = true;
     counter = counter % numberOfSlides + 1;
@@ -784,7 +780,7 @@
         </center>
 
         <br><br>
-        <p style="color: white; text-align: center;">
+        <p style="color: white; text-align: center;width: 60%;margin-left: auto;margin-right: auto;">
             Nishchal had started Preseed to take a form of an earliest stage tech incubator, that has mastered the art
             of inspiring MVPs with little to no money, starting with his own 2 startups mentioned above, in Social
             Networking and Math.
