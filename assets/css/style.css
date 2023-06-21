@@ -1736,24 +1736,40 @@ summary:hover {
     margin-top: 0px;
   }
 }
+/*
+.drowpdown-arrow{
+  display: inline-block;
+  color: black;
+  margin-left: -14px;
+  margin-right: 10px;
+  border-top: 4px solid transparent black;
+  border-bottom: 4px solid transparent black;  
+  border-left: 4px solid rgb(250 204 21 / var(--tw-text-opacity));;  /* Arrow points to right 
+  transform: rotate(90deg); /* Make it point downwards 
+}
+
+.details.open summary .dropdownarrows{
+  transform: rotate(-90deg);
+}
+*/
 .details > summary::after {
-  position: absolute;
-  content: "+";
+  position: ;
   top: 18px;
   left: 8px;
+  content: "▼";
 }
 .details > .iconbtn::after {
-  position: absolute;
-  content: "+";
+  position: ;
+  content: "▼";
   top: 18px;
   left: 8px;
   /*top: 15px;*/
 }
 .details[open] > summary::after {
-  position: absolute;
-  content: "-";
- top: 18px;
-  left: 8px;
+  
+  content: "▲";
+  width: 5px;
+  height: auto;
 }
 .details > summary::-webkit-details-marker {
   display: none;
@@ -1770,11 +1786,11 @@ summary:hover {
 }
 
 .plus-minus:after {
-  content: "-";
+  content: "▲";
   top: -1px;
 }
 .plus-minus .collapsed:after {
-  content: "+";
+  content: "▼";
   top: 0;
 }
 .faq__content {
