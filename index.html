@@ -405,6 +405,12 @@
                 <p style="color: white;" class="yoga_quote h4 cover-lastpara" align="center"><b>1. Through our virtuous
                         portfolio software startup to make you more productive <b> - <a href="https://chattodo.preseed.in" target=_blank> <b
                                     style="color:#ffbf1d"> chattodo.preseed.in</b></a>.</b></b></p>
+                               
+                              <center>
+                                <img src="assets/images/CHATTODOlog.png" alt="chattodo" style="width: 250px; height: auto;"> 
+                                <p style="color: white;margin-top: -20px;">Whatsapp on Steroids</p>
+                              </center><br><br>
+
                             <p style="color: #fff;" class="yoga_quote h4 cover-lastpara" align="center"><b>2. Through our other virtuous portfolio software startups, yet again for entrepreneurs : 
                            </b></p>
                         
@@ -422,6 +428,7 @@
                 
                 <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/> &nbsp;&nbsp;&nbsp;
                 <input type="radio" name="slider" title="slide2" class="slider__nav"/>&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="slider" title="slide3" class="slider__nav"/>&nbsp;&nbsp;&nbsp;
                 
                 <div class="slider__inner">
                   
@@ -431,6 +438,9 @@
                   </div>
                   <div class="slider__contents"><a href="https://quickangels.in" class="gostart"><img src="assets/images/QuickAngels.png" alt=""></a> <br>                 
                     <p class="slider__txt">Instagram for investors.</p>
+                  </div>
+                  <div class="slider__contents"><a href="https://.in" class="gostart" ><img src="assets/images/mentorhub.svg" alt="" style="width: 190px;height: auto;"></a> <br>                 
+                    <p class="slider__txt">Your Gateway to Expert Startup Mentorship.</p>
                   </div>
                 </div>
               </div>
@@ -448,7 +458,7 @@
             
             
             .startups {
-              height: 200px;
+              height: 280px;
               width: 400px;
             }
 
@@ -506,10 +516,13 @@
                       animation: check 0.4s linear forwards;
             }
             .slider__nav:checked:nth-of-type(1) ~ .slider__inner {
-              left: -50%;
+              left: -20%;
             }
             .slider__nav:checked:nth-of-type(2) ~ .slider__inner {
-              left: -250%;
+              left: -150%;
+            }
+            .slider__nav:checked:nth-of-type(3) ~ .slider__inner {
+              left: -285%;
             }
             
             .slider__inner {
@@ -530,6 +543,12 @@
                       will-change: transform;  /* New property added for optimization */
               transform: translateZ(0); /* For GPU rendering */
             }
+
+            .mentorhubsvg{
+                width: 250px;
+                height: auto;
+            }
+
             .slider__contents {
               height: 100%;
               padding: 2rem;
@@ -602,14 +621,14 @@
             
             @media only screen and (max-width:400px) {
                 .startups{
-                    height: 150px;
+                    height: 200px;
                     width: 250px;
                 }
                 .slider__txt{
                     font-size: 15px;
                 }
                 .slider__contents a img{
-                    width: 60%;
+                    width: 70%;
                     height: auto;
                 }  
                 .slider__contents a .iidb{
@@ -631,11 +650,8 @@
               <script>
                 window.onload = function() {
   let counter = 1;
-  const numberOfSlides = 2; // change to your number of slides
-  setInterval(() => {
-    document.querySelector(`input[title="slide${counter}"]`).checked = true;
-    counter = counter % numberOfSlides + 1;
-  }, 4000); // 8000ms = 8s
+  const numberOfSlides = 3; // change to your number of slides
+  
 
   // Swipe functionality
   const slider = document.querySelector('.sliderstartuplogos');
