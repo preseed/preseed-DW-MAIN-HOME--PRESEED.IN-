@@ -327,6 +327,10 @@ ul.links {
   .mob-br {
     display: block;
   }
+.intro
+	{
+		height: 650px;
+	}
   
   #we_inspire_h {
     margin: 80px auto 10px;
