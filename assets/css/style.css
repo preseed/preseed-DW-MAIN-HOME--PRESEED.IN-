@@ -394,7 +394,7 @@ ul.links {
 .button-top {
   appearance: none;
   border-radius: 0.25em;
-  color: blCK;
+  color: #ff005a;
   cursor: pointer;
   display: inline-block;
   font-weight: 500;
